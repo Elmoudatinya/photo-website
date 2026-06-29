@@ -167,7 +167,7 @@ nav .menu{
 .header-services{
     font-size: 50px;
     font-weight: 600;
-    color: navy
+    color: dodgerblue
 }
 .first-paragraph{
     color: grey;
@@ -193,14 +193,14 @@ nav .menu{
 .number-years{
     font-size: 50px;
     font-weight: 600;
-    color: orange;
+    color: white;
     font-family: "Ubuntu", sans-serif;
 
 }
 .words-years{
     font-size: 24px;
     font-weight: 600;
-    color: blue;
+    color: white;
     font-family: "Ubuntu", sans-serif;
     margin-bottom: 10px;
 }
@@ -432,188 +432,29 @@ textarea::-webkit-scrollbar-thumb{
 		flex-basis: 100%;
 	}
 }
-@media(max-width: 900px){
-	.container .row{
-		flex-wrap: wrap;
-	}
-	.row section.left, .row section.right{
-		flex-basis: 100%;
-		margin: 0px;
-	}
-}
-/* ── Layout ── */
-.fb-wrap {
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: inherit;
-}
 
-/* ── Card ── */
-.fb-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 2rem;
-}
-
-/* ── Header ── */
-.fb-title {
-  margin: 0 0 4px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #111827;
-}
-
-.fb-subtitle {
-  margin: 0 0 1.5rem;
+.footer {
+  background: #1b1b1b;
+  color: #aaa;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  color: #6b7280;
-}
-
-/* ── Labels ── */
-.fb-label {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
-  color: #6b7280;
-  margin-top: 1.25rem;
-  margin-bottom: 6px;
-}
-
-.fb-optional {
-  color: #9ca3af;
-  font-weight: 400;
-}
-
-/* ── Star rating (pure CSS trick: stars listed 5→1 in HTML, displayed RTL) ── */
-.fb-stars {
+  padding: 18px 40px;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #2e2e2e;
 }
 
-.fb-stars input[type="radio"] {
-  display: none;
+.footer-left {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
 }
 
-.fb-stars label {
-  font-size: 32px;
-  color: #d1d5db;
-  cursor: pointer;
-  transition: color 0.1s;
+.footer-middle {
+  color: #888;
 }
 
-/* Highlight hovered star and all stars after it (which are visually before, due to RTL) */
-.fb-stars label:hover,
-.fb-stars label:hover ~ label,
-.fb-stars input[type="radio"]:checked ~ label {
-  color: #f59e0b;
-}
-
-/* ── Checkboxes as chips ── */
-.fb-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.fb-options input[type="checkbox"] {
-  display: none;
-}
-
-.fb-chip {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  font-size: 13px;
-  cursor: pointer;
-  color: #6b7280;
-  background: #f9fafb;
-  transition: all 0.12s;
-}
-
-.fb-options input[type="checkbox"]:checked + .fb-chip {
-  background: #eff6ff;
-  border-color: #93c5fd;
-  color: #1d4ed8;
-}
-
-/* ── Textarea ── */
-textarea {
-  width: 100%;
-  box-sizing: border-box;
-  min-height: 110px;
-  resize: vertical;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-  padding: 10px 12px;
-  margin-top: 4px;
-  font-family: inherit;
-  color: #111827;
-}
-
-textarea:focus {
-  outline: none;
-  border-color: #3b82f6;
-}
-
-/* ── Text inputs ── */
-.fb-input {
-  width: 100%;
-  box-sizing: border-box;
-  height: 38px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-  padding: 0 12px;
-  font-family: inherit;
-  color: #111827;
-  margin-top: 4px;
-}
-
-.fb-input:focus {
-  outline: none;
-  border-color: #3b82f6;
-}
-
-/* ── Divider ── */
-.fb-divider {
-  border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 1.5rem 0;
-}
-
-/* ── Submit button ── */
-.fb-submit {
-  display: block;
-  margin-top: 1.5rem;
-  width: 100%;
-  height: 42px;
-  border-radius: 8px;
-  border: none;
-  background: #2563eb;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.fb-submit:hover {
-  background: #1d4ed8;
-}
-
-.fb-submit:active {
-  transform: scale(0.98);
-}
-
-/* ── Responsive ── */
-@media (max-width: 480px) {
-  .fb-card {
-    padding: 1.25rem;
-  }
+.footer-right {
+  color: #888;
 }
