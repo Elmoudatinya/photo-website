@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding lab</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 </head>
 <body>
      <!-- NAV BAR -->
     <nav>
         <div class="menu">
             <div class="logo">
-                <a href="#">CodingLab</a>
+                <a href="#">CodingLab <i class="fa-solid fa-camera"></i></a>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="contact-us.html">contacts</a></li>
+                <li><a href="#contact">contacts</a></li>
                 <li><a href="#feedback">feedback</a></li>
                 <li><a href="indexes.html">Login</a></li>
             </ul>
@@ -95,7 +96,6 @@
     <html>
 <head>
 	
-	<link rel="stylesheet" type="text/css" href="contact-us.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
@@ -106,7 +106,7 @@
 	<title>Contact Section</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="contact">
 		<main class="row">
 			
 
@@ -211,10 +211,40 @@
 	</div>
 </body>
 </html>
+
+       <!-- FEEDBACK SECTION -->
+       <section class="feedback-section" id="feedback">
+           <div class="feedback-container">
+               <h2 class="feedback-title">We'd Love Your Feedback</h2>
+               <p class="feedback-subtitle">Let us know what you think about CodingLab</p>
+
+               <form class="feedbackForm">
+                   <div class="inputGroup fullWidth">
+                       <input type="text" name="name" required>
+                       <label>Your Name</label>
+                   </div>
+
+                   <div class="inputGroup fullWidth">
+                       <input type="email" name="email" required>
+                       <label>Email</label>
+                   </div>
+
+                   <div class="inputGroup fullWidth">
+                       <textarea required></textarea>
+                       <label>Your Feedback</label>
+                   </div>
+
+                   <div class="inputGroup fullWidth">
+                       <button type="submit">Submit Feedback</button>
+                   </div>
+               </form>
+           </div>
+       </section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-left">
-    📷 CodingLab
+     CodingLab
   </div>
   <div class="footer-middle">
     © 2026 CodingLab — Made with care
