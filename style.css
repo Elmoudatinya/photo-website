@@ -433,6 +433,91 @@ textarea::-webkit-scrollbar-thumb{
 	}
 }
 
+/* FEEDBACK SECTION */
+.feedback-section{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    font-style: italic;
+    padding: 0;
+}
+.feedback-container{
+    background-color: #3a3a3a;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+.feedback-title{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.feedback-subtitle{
+    color: #ccc;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feedbackForm .inputGroup{
+    margin: 18px 0;
+    position: relative;
+}
+.feedbackForm input, .feedbackForm textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 6px 0;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+.feedbackForm textarea{
+    resize: none;
+    height: 150px;
+    display: block;
+}
+.feedbackForm label{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.feedbackForm textarea:valid ~ label{
+    transform: translateY(-22px);
+    font-size: 14px;
+    color: #fff;
+}
+.feedbackForm button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #2e2e2e;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.feedbackForm button:hover{
+    background-color: #2e2e2e;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 .footer {
   background: #1b1b1b;
   color: #aaa;
